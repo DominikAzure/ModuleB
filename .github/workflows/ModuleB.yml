@@ -34,8 +34,4 @@ jobs:
           # azcliversion: 2.34.1 # optional, default is agentazcliversion
           # Specify the script her
           inlineScript: |
-            az deployment group create \
-            --name OSMBicepDeployment \
-            --resource-group rg-spoke-001\
-            --template-file aks.bicep \
-            --parameters aksparameters.json
+            az deployment group create --name OSMBicepDeployment --resource-group rg-spoke-001 --template-file aks.bicep --parameters aksparameters.json
