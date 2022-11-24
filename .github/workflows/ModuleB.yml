@@ -18,10 +18,12 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           
-      # Deploy Bicep file
-      - name: bicep-build-output
-        uses: Azure/bicep-build-action@v1.0.1
+      - name: Create Azure Resource Group
+        uses: Azure/cli@v1.0.6
         with:
-          # Bicep main file path
-          bicepFilePath: ./main.bicep
+          # Azure CLI version to be used to execute the script. If not provided, latest version is used
+          # azcliversion: 2.34.1 # optional, default is agentazcliversion
+          # Specify the script here
+          inlineScript: |
+            az deployment sub create --location northeurope --template-file /main.bicep
       
