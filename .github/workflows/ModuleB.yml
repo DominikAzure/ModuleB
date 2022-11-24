@@ -25,5 +25,5 @@ jobs:
           # azcliversion: 2.34.1 # optional, default is agentazcliversion
           # Specify the script here
           inlineScript: |
-            az deployment sub create --location northeurope --template-file /main.bicep
+            az sub create --location northeurope --template-file main.bicep
       
