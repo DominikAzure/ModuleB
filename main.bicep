@@ -4,7 +4,7 @@ targetScope = 'subscription'
   'northeurope'
 ])
 param RGlocation string
-param RGname string = 'RG'
+param RGname string = 'podSieci'
 
 
 resource RGpodSieci 'Microsoft.Resources/resourceGroups@2021-04-01' = {
