@@ -19,10 +19,9 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           
       # Deploy Bicep file
-      - name: deploy
-        uses: azure/arm-deploy@v1
+      - name: bicep-build-output
+        uses: Azure/bicep-build-action@v1.0.1
         with:
-          subscriptionId: ${{ secrets.SUBSCRIPTION_ID }}
-          template: ./main.bicep
-          failOnStdErr: false
+          # Bicep main file path
+          bicepFilePath: ./main.bicep
       
