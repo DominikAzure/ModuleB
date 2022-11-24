@@ -38,4 +38,4 @@ jobs:
             --name OSMBicepDeployment \
             --resource-group rg-spoke-001\
             --template-file osm.aks.bicep \
-            --parameters osm.aks.parameters.json
+            --parameters @osm.aks.parameters.json
