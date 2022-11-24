@@ -20,6 +20,7 @@ resource aksCluster 'Microsoft.ContainerService/managedClusters@2021-03-01' = {
   properties: {
     kubernetesVersion: k8Version
     dnsPrefix: clusterDNSPrefix
+    vnetSubnetID: '/subscriptions/34eda756-e47f-4ab1-99d7-2098b6da80e9/resourceGroups/rg-spoke-001/providers/Microsoft.Network/virtualNetworks/vnet-spoke-001/subnets/snet-spoke-001'
     enableRBAC: true
     agentPoolProfiles: [
       {
