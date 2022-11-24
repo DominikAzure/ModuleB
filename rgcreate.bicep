@@ -12,4 +12,4 @@ resource RGpodSieci 'Microsoft.Resources/resourceGroups@2021-04-01' = {
   location: RGlocation
 }
 
-output RGNameOutput string = ResourceGroupName
+output RGNameOutput string = RGpodSieci.name
