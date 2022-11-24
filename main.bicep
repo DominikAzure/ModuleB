@@ -4,10 +4,10 @@ targetScope = 'subscription'
 param location string = 'northeurope'
 
 @description('Hub resource group.')
-param hubrgname string = 'RG-podSieci-01'
+param hubrgname string = 'rg-hub-001'
 
 @description('Spoke resource group.')
-param spokergname string = 'RG-podSieci-01'
+param spokergname string = 'rg-spoke-001'
 
 @description('Virtual machine admin username.')
 param adminusername string
