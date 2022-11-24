@@ -18,12 +18,12 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           
-      #- name: Create Azure Resource Group
-        #uses: Azure/cli@v1.0.6
-        #with:
+      - name: Create Azure Resource Group
+        uses: Azure/cli@v1.0.6
+        with:
           # Azure CLI version to be used to execute the script. If not provided, latest version is used
           # azcliversion: 2.34.1 # optional, default is agentazcliversion
           # Specify the script here
-          #inlineScript: |
-            #az deployment sub create --name rgdeploy --location northeurope --template-file rgcreate.bicep
+          inlineScript: |
+            az deployment sub create --name rgdeploy --location northeurope --template-file main.bicep
       
