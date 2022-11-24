@@ -10,12 +10,12 @@ param hubrgname string = 'rg-hub-001'
 param spokergname string = 'rg-spoke-001'
 
 @description('Virtual machine admin username.')
-param adminusername string
+param adminusername string = 'admin123456'
 
 @description('Virtual machine admin password.')
 @minLength(12)
 @secure()
-param adminpassword string
+param adminpassword string = 'admin123456'
 
 // Create hub resource group
 resource rghub 'Microsoft.Resources/resourceGroups@2021-04-01' = {
