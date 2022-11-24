@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "clusterName": {
+      "value": "dominikkluster"
+    },
+    "clusterDNSPrefix": {
+      "value": "dominikdnsss"
+    },
+    "k8Version": {
+      "value": "1.23.23"
+    },
+    "sshPubKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdLWP8eE5j6UwCbc41IyRKcc/RPhFNJWv52IiM6QLnqplC5xoq+DH7B40P/R89auk7lfLCF2zVYZIwamszy+ZEqj8Yr8MW9u6zHJGN2P92JHYbpnzO4TFEkVeSESuEFKPgxK31pOc27XtipRD8ilQxfG725NoksdiYYmTXeKvKKBmDmzOrcmNsvDGU7HwmDW6gWhuLG35PI1qvWhegcIOfGsnF3zaItFS30R2g9VfQnPMEYtFm7BHNa3NadQU72PEDrmdmoYTlKGYyUj1fw02WtgOpi1IrrvA9k2J+87Q68mWC7f42A/D/bEYjQRLG74Y8gMWeAm0Ov5LZT+u9/9mDCcsZKB45r1nGoV3xzt/9MEFTOogOajN2j3hLXr4nysnKw1i/twOIzgfLfyh8+vpbbXSyCoH1VEpAff++aFG53H6hMdOlAypT3LBxQfJrOoDl5HG5ojA/j1ldWA9BvvLxjR1+qv0GUNss1ggernHr3gvTnHrjrh5CSXs2EI+MjQk= generated-by-azure"
+    }
+  }
+}
